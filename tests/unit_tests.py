@@ -1,9 +1,9 @@
 import unittest
 from resa.resa import *
 
-class ResaUnitTests(unittest.TestCase):
-  def test_bookMeetingRoom(self):
-    self.assertEqual(True, False)
+class bookMeetingRoomUnitTests(unittest.TestCase):
+  def test_small_room(self):
+    self.assertEqual(bookMeetingRoom(5), Room.SMALL)
 
 if __name__ == '__main__':
   unittest.main()
